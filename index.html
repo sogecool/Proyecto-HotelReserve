@@ -1,29 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Explore Baja California</title>
-<link rel="stylesheet" href="css/style.css">
-<meta charset="UTF-8">
-<meta name="description" content="Pagina-Principal-Explore-Baja-California">
-<meta name="author" content="Diego Romo">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Baja California</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div id="container">
-    <div id="imagenPrincipal">
-      <h3>Explore</h3>
-      <h1>Baja</h1>
-      <h1>California</h1>
+    <div id="explore-page" class="main-container">
+        <header>
+            <h1>Explore Baja California</h1>
+        </header>
+        <section class="main-section">
+            <div class="banner"></div>
+            <div class="quote">
+                <p>"¡Bienvenido a Hoteles Cesun Universidad!."</p>
+                <p>"Estamos encantados de recibirte. Disfruta de tu estancia y de todas nuestras comodidades. Si necesitas algo, no dudes en contactarnos.
+
+                    ¡Gracias por elegirnos!"</p>
+            </div>
+            <div class="buttons">
+                <button class="button-ind" onclick="showLoginPage()">Iniciar Sesión</button>
+                <button class="button-ind" onclick="showSettings()">Settings</button>
+            </div>
+        </section>
+        <section class="destinations">
+            <div class="destination">
+                <h2>Destinos</h2>
+                <img src="image.png" alt="">
+                <div class="placeholder"></div>
+                <button>Explorar</button>
+            </div>
+            <div class="destination">
+                <h2>Destinos</h2>
+                <div class="placeholder"></div>
+                <button>Explorar</button>
+            </div>
+            <div class="destination">
+                <h2>Destinos</h2>
+                <div class="placeholder"></div>
+                <button>Explorar</button>
+            </div>
+        </section>
     </div>
-    <div class="center-block">
-      <div class="welcome-message">
-        <p>¡Bienvenido a Explore Baja California!</p>
-      </div>
-      <div class="action-buttons">
-        <button class="login-button">Iniciar Sesión</button>
-        <button class="settings-button">Ajustes</button>
-      </div>
+
+    <div id="login-page" class="hidden">
+        <header>
+            <h1>LOGIN</h1>
+        </header>
+        <section class="login-section">
+            <div class="login-container">
+                <input class="placeholder" type="email" id="email" placeholder="Correo Electronico">
+                <input class="placeholder" type="password" id="password" placeholder="Contraseña">
+                <button onclick="forgotPassword()">Olvidé mi contraseña</button>
+                <button onclick="login()">Log In</button>
+            </div>
+
+            
+            <div class="new-container">
+                <p class="new-register-p">¿Eres nuevo? <button onclick="redirectToRegister()">Crea una cuenta</button></p>
+                <button onclick="showExplorePage()">Regresar</button>
+             </div>
+        </section>
     </div>
-  </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

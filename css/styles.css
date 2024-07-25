@@ -1,15 +1,8 @@
-html,body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-.main-container {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-
+    background-color: #f0f0f0;
 }
 
 header {
@@ -23,15 +16,10 @@ header {
     background-color: #009688;
     color: white;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .banner {
-    background-image: url("../Image/baja-california-1.png");
-    background-size: cover;
-    background-position: center;
+    background-color: #ccc;
     height: 200px;
     margin-bottom: 20px;
 }
@@ -43,7 +31,7 @@ header {
 .buttons {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
 .buttons button {
@@ -54,18 +42,8 @@ header {
     cursor: pointer;
 }
 
-.button-ind {
-    width: 130px;
-    height: 40px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-
 .destinations {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     background-color: #009688;
     padding: 20px;
@@ -73,8 +51,6 @@ header {
 
 .destination {
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .destination .placeholder {
@@ -87,55 +63,28 @@ header {
     display: none;
 }
 
-.login-page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.login-section,
+.register-section {
     background-color: #009688;
-}
-
-.login-section{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: flex-start;
-
-}
-
-
-.register-section, .login-container, .new-container {
-    background-color: #009688;
-    text-align: center;
-    display: flex;
     padding: 20px;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
 
-.login-container{
-    height: 400px;
+.login-section input,
+.register-section input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
 }
 
-.new-container{
-    height:max-content;
-}
-
-.register-section{
-    height: 100vh;
-}
-
-.new-register-p{
-    display: flex;
-    flex-direction: column;
-}
-
-
- button {
+.login-section button,
+.register-section button {
     background-color: #007bff;
     border: none;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
     margin: 10px auto;
-    font-weight: bold;
+    display: block;
 }

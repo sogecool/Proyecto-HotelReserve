@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="explore-page" class="main-container">
+    <div id="explore-page">
         <header>
             <h1>Explore Baja California</h1>
         </header>
@@ -20,8 +20,8 @@
                     ¡Gracias por elegirnos!"</p>
             </div>
             <div class="buttons">
-                <button class="button-ind" onclick="showLoginPage()">Iniciar Sesión</button>
-                <button class="button-ind" onclick="showSettings()">Settings</button>
+                <button onclick="showLoginPage()">Iniciar Sesión</button>
+                <button onclick="showSettings()">Settings</button>
             </div>
         </section>
         <section class="destinations">
@@ -49,18 +49,12 @@
             <h1>LOGIN</h1>
         </header>
         <section class="login-section">
-            <div class="login-container">
-                <input class="placeholder" type="email" id="email" placeholder="Correo Electronico">
-                <input class="placeholder" type="password" id="password" placeholder="Contraseña">
-                <button onclick="forgotPassword()">Olvidé mi contraseña</button>
-                <button onclick="login()">Log In</button>
-            </div>
-
-            
-            <div class="new-container">
-                <p class="new-register-p">¿Eres nuevo? <button onclick="redirectToRegister()">Crea una cuenta</button></p>
-                <button onclick="showExplorePage()">Regresar</button>
-             </div>
+            <input type="email" id="email" placeholder="Correo Electronico">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button onclick="forgotPassword()">Olvidé mi contraseña</button>
+            <button onclick="login()">Log In</button>
+            <p>¿Eres nuevo? <button onclick="redirectToRegister()">Crea una cuenta</button></p>
+            <button onclick="showExplorePage()">Regresar</button>
         </section>
     </div>
 

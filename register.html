@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+
+    <div class="main-register">
+        <header>
         <h1>Crear una cuenta</h1>
-    </header>
-    <section class="register-section">
-        <input class="placeholder" type="text" id="fullname" placeholder="Nombre Completo">
-        <input class="placeholder" type="email" id="register-email" placeholder="Correo Electronico">
-        <input class="placeholder" type="password" id="register-password" placeholder="Contraseña">
-        <button onclick="register()">Crear Cuenta</button>
-        <button onclick="redirectToLogin()">Regresar</button>
-    </section>
+        </header>
+        <form class="register-section">
+            <input type="text" id="fullname" placeholder="Nombre Completo">
+            <input type="email" id="register-email" placeholder="Correo Electronico">
+            <input  type="password" id="register-password" placeholder="Contraseña">
+            <button onclick="register()">Crear Cuenta</button>
+            <button onclick="redirectToLogin()">Regresar</button>
+        </form>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

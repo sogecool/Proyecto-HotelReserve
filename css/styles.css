@@ -1,90 +1,147 @@
-body {
-    font-family: Arial, sans-serif;
+/* General styles */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.main-section {
-    background-color: #009688;
-    color: white;
-    padding: 20px;
-}
-
-.banner {
-    background-color: #ccc;
-    height: 200px;
-    margin-bottom: 20px;
-}
-
-.quote {
-    margin-bottom: 20px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.buttons button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.destinations {
-    display: flex;
-    justify-content: space-around;
-    background-color: #009688;
-    padding: 20px;
-}
-
-.destination {
-    text-align: center;
-}
-
-.destination .placeholder {
-    
-    height: 150px;
-    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #009688 ;
 }
 
 .hidden {
     display: none;
 }
 
-.login-section,
-.register-section {
-    background-color: #009688;
+#explore-page, #login-page, #register-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #2288f5;
+    padding: 20px;
+    width: 100%;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.login-section input,
-.register-section input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
+header h1 {
+    margin: 0;
+    color: #fffdfd;
 }
 
-.login-section button,
-.register-section button {
-    background-color: #007bff;
-    border: none;
-    color: white;
+.header-main{
+    border-radius: 20px 20px 0 0;
+}
+
+/* Main section styles */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner {
+    background-image: url('../Image/baja-california-1.png'); /* Reemplaza con tu imagen de banner */
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.quote {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fffdfd;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
     padding: 10px 20px;
     cursor: pointer;
-    margin: 10px auto;
-    display: block;
+    background-color: #2288f5;
+    color: #fffdfd;
+    font-weight: bold;
+}
+
+/* Destinations section styles */
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #10a899;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.destination .placeholder {
+    width: 100%;
+    height: 100px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    
+}
+
+.destination button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #2288f5;
+    color: #fffdfd;
+    font-weight: bold;
+}
+
+/* Login page styles */
+
+.header-login, .header-register{
+    border-radius: 20px 20px 0 0;
+}
+
+
+.login-section, .register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.login-section input, .register-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-section button, .register-section button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #2288f5;
+    color: #fffdfd;
+    font-weight: bold;
 }
